@@ -8,12 +8,23 @@
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="smooth.scss">
     <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
 
 </head>
-<body>
+<body class="body">
+  
   <style>img[alt="www.000webhost.com"]{display:none;}</style>
   <section>
-    <span>Artonline guide <h4>by phroge</h4></span>
+    <span>Artonline guide </span>
+    <h2>by phroge</h2>
+    <img src="./img/scroll_down.gif" alt="" class="gifcenter">
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
   </section>
   <header class="header" id="myHeader">
     <img class="logo" src="https://assets.artonline.site/arteon.svg" alt="">
@@ -24,19 +35,25 @@
       <a href=https://exchange.artonline.site/#!/market>exchange</a>
       <a href=https://discord.gg/artonline>discord</a>
       <a href=https://app.artonline.site>mining platform</a>
+      <a href="#fl" class="link" >navigation</a>
+      <button onclick="toggleTheme('dark');">Dark theme (acts weird)</button>
+     </article>
+      
+      
     </nav>
   </header>
 
-  <article>
+  <article class="article2"> 
+    <h2 class="warning">(This site is not official and may contain minor errors)</h2>
     <h1>How to use the mining platform</h1>
-    <h1>Connecting via metamask</h1> <br>
+    <h1 id="mp">Connecting via metamask</h1> <br>
     The approvement window should pop up automatically. If it didnt happen, press the "connect" button in the
     upper right corner.
 
     <h1>Getting a mining card</h1>
     <div class="text-align">
     Using mining platform requires you to have a mining card wich are available on the
-     <a href="https://exchange.artonline.site/#!/market">exchange.</a> There is also an exchange on the mining platform.
+     <a href="https://exchange.artonline.site/#!/market" class="link">exchange.</a> There is also an exchange on the mining platform.
      Celect a preferable mining card and press buy. <br>
      <img class="workspace-img" src="./img/module_buy.png" alt="">
       A pop up metamask window should appear. Press confirm, 
@@ -63,17 +80,40 @@
        the reward right after transaction. So if you mined 10000 artonline you only get 8000. <br>
         Stake for 6 months means you wont be able to use your artonline for 6 months,
         but no tax. 
+        <br>
+        <br>
+        <h1>Using calculator</h1>
+        Calculator shows how much artonline will be mined in selected amount of time.
+        <img src="./img/calculator.png" alt="1" class="workspace-img">
+        Select your pool in "GPU" field.
+        Enter current pool size for selected miner in "miners" field. Enter amount of your miners in "GPU'S" field.
+        You get the result in Art/min.
         
 
 
   </article>
   <br>
-  <article>
-     <h1>Using the exchange</h1>
+  <article class="article">
+     <h1 id="ex">Using the <a href="https://exchange.artonline.site/#!/market" class="link">exchange</a> </h1>
+     <h1>Buying a miner using the exchange</h1>
+     Buying artonline from exchange is simular to buying it from the mining app. <br>
+     Go to the market and select a preferable miner. Press "buy" button right under preferable miner and confirm the transaction.
+     You should recieve the purchased miner within 5 minutes.
 
 
 
+     
+     </article>
+
+     <article class="article">
+       <h1 id="fl">site navigation</h1>
+       <a href="#mp" class="link" >Using the mining platform</a> <br>
+       <a href="#ex" class="link" >Using the exchange</a>
+        <br>
+    
+    
      <script src="java.js"></script>
+  
 </body>
 </html>
 

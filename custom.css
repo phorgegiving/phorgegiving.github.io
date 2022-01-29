@@ -13,6 +13,7 @@
     font-weight: 400;
     font-family: 'Source Sans Pro', 'Open Sans', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
     -webkit-text-size-adjust: 100%;
+    background-color: white;
   }
   body {
     margin: 0;
@@ -30,6 +31,18 @@
     padding-top: calc(50vh - 20pt);
     display: block;
     font-weight: 700;
+  }
+  section h2{
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 200%;
+  }
+  .gifcenter{
+    width: 5%;
+    margin-top: 10%;
+    margin-left: 47.5%;
   }
   header {
     width: 100%;
@@ -87,6 +100,7 @@
       margin: 3.5em auto 0;
       padding: 2em;
     }
+    .logo{width: 5%;}
   }
   @media (min-width: 800px) {
     article {
@@ -96,7 +110,7 @@
   
 
 
-  /* Style the header */
+
 .header {
   padding: 10px 16px;
       background: white;
@@ -104,19 +118,19 @@
 
 }
 
-/* Page content */
+
 .content {
   padding: 16px;
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+
 .sticky + .content {
 padding-top: 102px;}
 
@@ -130,13 +144,14 @@ padding-top: 102px;}
 
 
 
-.logo{
+ .logo{
     width: 1%;
   }
 
   .workspace-img{
     padding-top: 10px;
     width: 100%;
+    
   }
 
   .workspace-img-small{
@@ -149,12 +164,49 @@ padding-top: 102px;}
   }
 
   body::-webkit-scrollbar {
-    width: 10px;               /* ширина scrollbar */
+    width: 10px;               
   }
   body::-webkit-scrollbar-track {
-    background: rgba(145, 116, 63, 0);        /* цвет дорожки */
+    background: rgba(145, 116, 63, 0);        
   }
   body::-webkit-scrollbar-thumb {
-    background-color: coral;    /* цвет плашки */
-    border-radius: 20px;       /* закругления плашки */
+    background-color: coral;    
+    border-radius: 20px;       
   }
+
+  .link{
+    outline: none;
+    text-decoration: none;
+    
+    padding: 0 .5em;
+    color: coral;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .warning{
+    color: coral;
+  }
+
+  html {
+    transition: color 300ms, background-color 300ms;
+}
+
+html[data-theme='dark'] {
+    background: #000;
+    filter: invert(1) hue-rotate(180deg)
+}
+
+html[data-theme='dark'] img {
+  filter: invert(1) hue-rotate(180deg)
+}
+
+
+
+
+
+
+  
+
