@@ -81,6 +81,7 @@
     max-width: 800px;
     background: white;
     box-shadow: rgba(0,0,0,.05) 0 3px 15px;
+    border-radius: 20px;
   }
   article p {
     margin: 0;
@@ -186,27 +187,62 @@ padding-top: 102px;}
     scroll-behavior: smooth;
   }
 
-  .warning{
-    color: coral;
+ .warning{
+  color: coral;
   }
 
-  html {
-    transition: color 300ms, background-color 300ms;
+
+  button {
+    /* Сбрасываем дефолтные стили */
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8em;
+    /* Тут можно поэкспериментировать */
+   
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.445);
+  }
+
+html[data-theme='dark'] section{
+    background: #222;
+    color: #eee;
+    transition: color 500ms;
+    transition: background 500ms;
+}
+
+html[data-theme='dark'] article{
+  background: #222;
+  color: #eee;
+  transition: color 500ms;
+    transition: background 500ms;
+}
+
+html[data-theme='dark'] header {
+  background-color: #111;
+  color: #eee;
+  transition: color 500ms;
+    transition: background 500ms;
 }
 
 html[data-theme='dark'] {
-    background: #000;
-    filter: invert(1) hue-rotate(180deg)
+  background: rgb(0, 0, 0);
+    transition: background 500ms;
 }
 
-html[data-theme='dark'] img {
-  filter: invert(1) hue-rotate(180deg)
+html[data-theme='dark'] body {
+  background: rgb(20, 20, 20);
+    transition: background 500ms;
 }
 
+html[data-theme='dark'] nav a {
+  color: gray;
+    transition: color 500ms;
+}
 
-
-
-
-
-  
-
+.hidden {
+  display: none;
+}   

@@ -1,10 +1,16 @@
 
-
 const htmlEl = document.getElementsByTagName('html')[0];
-const toggleTheme = (theme) => {
-  htmlEl.dataset.theme = theme;
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    htmlEl.dataset.theme = currentTheme;
 }
 
+//local save toggletheme=dark
+const toggleTheme = (theme) => {
+    htmlEl.dataset.theme = theme;
+    localStorage.setItem('theme', theme);
+}
 
 
 window.onscroll = function() {myFunction()};
@@ -22,10 +28,6 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-
-
-
-
 
 
 
