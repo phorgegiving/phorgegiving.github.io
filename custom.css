@@ -14,14 +14,17 @@
     font-family: 'Source Sans Pro', 'Open Sans', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
     -webkit-text-size-adjust: 100%;
     background-color: white;
+    transition: background-color 500ms;
   }
   body {
     margin: 0;
-    background: #eee;
+    background-color: rgb(240, 240, 240);
+    transition: background-color 500ms;
   }
   section {
     height: 100vh;
     background: coral;
+    transition: background 500ms;
   }
   section span {
     margin: 0;
@@ -68,7 +71,7 @@
     opacity: .7;
     padding: 0 .5em;
     color: black;
-    transition: opacity .2s ease-in-out;
+    transition: color 5000ms;
   }
   nav a:hover,
   nav a:focus {
@@ -86,6 +89,7 @@
   article p {
     margin: 0;
     color: #333;
+    transition: color 500ms;
   }
   article p + p {
     margin-top: .7em;
@@ -108,22 +112,18 @@
       margin: 3.5em auto;
     }
   }
-  
-
-
 
 .header {
   padding: 10px 16px;
       background: white;
       box-shadow: rgba(0,0,0,.05) 0 3px 15px;
+      transition: background 500ms;
 
 }
-
 
 .content {
   padding: 16px;
 }
-
 
 .sticky {
   position: fixed;
@@ -131,19 +131,8 @@
   width: 100%
 }
 
-
 .sticky + .content {
 padding-top: 102px;}
-
-
-
-
-
-
-
-
-
-
 
  .logo{
     width: 1%;
@@ -210,7 +199,7 @@ padding-top: 102px;}
 html[data-theme='dark'] section{
     background: #222;
     color: #eee;
-    transition: color 500ms;
+    transition: color 5000ms;
     transition: background 500ms;
 }
 
@@ -222,7 +211,7 @@ html[data-theme='dark'] article{
 }
 
 html[data-theme='dark'] header {
-  background-color: #111;
+  background-color: #222;
   color: #eee;
   transition: color 500ms;
     transition: background 500ms;
@@ -246,3 +235,9 @@ html[data-theme='dark'] nav a {
 .hidden {
   display: none;
 }   
+
+.lt{
+  background: rgb(80, 80, 80);
+  color: rgb(19, 19, 19);
+}
+

@@ -30,9 +30,18 @@ function myFunction() {
 }
 
 
+const dt = document.querySelector(".dt");
+const lt = document.querySelector(".lt");
 
+dt.addEventListener("click", btnClick);
+lt.addEventListener("click", btnClick);
 
-
+function btnClick() {
+    console.log(dt.classList);
+    dt.classList.toggle("hidden");
+    console.log(lt.classList);
+    lt.classList.toggle("hidden");
+  }
 
 
 
