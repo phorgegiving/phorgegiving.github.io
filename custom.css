@@ -26,14 +26,27 @@
     background: coral;
     transition: background 500ms;
   }
+  .section2 {
+    height: 15vh;
+    background: coral;
+    padding-top: calc(10vh - 20pt);
+    transition: background 500ms;
+  }
   section span {
     margin: 0;
     font-size: 400%;
     text-align: center;
     line-height: 1;
-    padding-top: calc(50vh - 20pt);
+    padding-top: calc(40vh - 20pt);
     display: block;
     font-weight: 700;
+  }
+  .section2 h2 {
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 200%;
   }
   section h2{
     text-align: center;
@@ -44,15 +57,26 @@
   }
   .gifcenter{
     width: 5%;
-    margin-top: 10%;
+    
     margin-left: 47.5%;
   }
-  header {
+  .header {
     width: 100%;
     padding: 1em;
     font-size: 140%;
     position: absolute;
     top: 100vh;
+    left: 0;
+    transition: opacity .2s ease-in-out;
+    text-align: center;
+    
+  }
+  .header2 {
+    width: 100%;
+    padding: 1em;
+    font-size: 140%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
     left: 0;
     transition: opacity .2s ease-in-out;
     text-align: center;
@@ -196,45 +220,6 @@ padding-top: 102px;}
     color: rgba(0, 0, 0, 0.445);
   }
 
-html[data-theme='dark'] section{
-    background: #222;
-    color: #eee;
-    transition: color 5000ms;
-    transition: background 500ms;
-}
-
-html[data-theme='dark'] article{
-  background: #222;
-  color: #eee;
-  transition: color 500ms;
-    transition: background 500ms;
-}
-
-html[data-theme='dark'] header {
-  background-color: #222;
-  color: #eee;
-  transition: color 500ms;
-    transition: background 500ms;
-}
-
-html[data-theme='dark'] {
-  background: rgb(19, 19, 19);
-    transition: background 500ms;
-}
-
-html[data-theme='dark'] body {
-  background: rgb(20, 20, 20);
-    transition: background 500ms;
-}
-
-html[data-theme='dark'] .countdown {
-  color: #eee;
-    transition: color 500ms;}
-
-html[data-theme='dark'] nav a {
-  color: gray;
-    transition: color 500ms;
-}
 
 .hidden {
   display: none;
@@ -269,3 +254,125 @@ html[data-theme='dark'] nav a {
   font-size: 16px;
 }
 
+
+.ht span{
+ font-size: 1em;
+ margin: 0;
+ text-align: center;
+ line-height: 1;
+ padding-top: 10px;
+ display: block;
+ padding-left: 510%;
+}
+
+.ht h3{
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+  line-height: 10;
+  padding-top: 0px;
+  display: block;
+  padding-left: 0%;
+ }
+
+
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+.footer-distributed {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #424242;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+ .footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: rgb(51, 51, 51);
+  display: inline-block;
+  padding-right: 5px;
+}
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #797979;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+    transition:all .25s;
+  }
+
+  .orange{
+    color: #000000;
+  }
+
+  .telegram{
+    background: url(img/telegram.png);
+  }
+
+  .thanks{
+    text-align: center;
+  }
+
+.up{
+    margin-bottom: 100vh;
+  }

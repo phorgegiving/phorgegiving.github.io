@@ -1,0 +1,5 @@
+#text_slide1, #text_slide2, #text_slide3, #text_slide4, #text_slide5{
+    position: absolute;
+    left: 0px;
+    opacity:0;
+}
