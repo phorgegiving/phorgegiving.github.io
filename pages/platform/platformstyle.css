@@ -1,5 +1,45 @@
-#text_slide1, #text_slide2, #text_slide3, #text_slide4, #text_slide5{
-    position: absolute;
-    left: 0px;
-    opacity:0;
-}
+
+ 
+ /* Стили для списка вкладок */
+ .tab-header {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+ }
+ 
+ /* Стили для вкладки */
+ .tab-header__item {
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-bottom: none;
+ }
+ 
+ /* Стили для активной вкладки */
+ .tab-header__item.active {
+    color: coral;
+    position: relative;
+    top: 0px;
+    background-color: #fff;
+    border: none;
+    transition: all 0.5s;
+   
+ }
+
+ 
+ /* Стили для контейнера с содержимым вкладки */
+ .tab-content__item {
+    display: none;
+    padding: 20px;
+    border: none;
+    transition: all 0.5s;
+ }
+ 
+ /* Стили для активного контейнера вкладки */
+ .tab-content__item.active {
+    display: block;
+    transition: all 0.5s;
+ }
+

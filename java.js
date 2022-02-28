@@ -11,7 +11,7 @@ const toggleTheme = (theme) => {
     htmlEl.dataset.theme = theme;
     localStorage.setItem('theme', theme);
 }
-
+//
 
 window.onscroll = function() {myFunction()};
 
@@ -83,7 +83,7 @@ function btnClick() {
     var timeinterval = setInterval(updateClock, 1000);
   }
    
-  var deadline="January 01 2023 00:00:00 GMT+0300"; // for endless timer
+  var deadline="January 01 2023 00:00:00 GMT+0300"; //timer
   initializeClock('countdown', deadline);
 
   
