@@ -1,3 +1,4 @@
+<!--кто скопировал тот пидорас-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,49 +7,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>beta guide</title>
   <link rel="stylesheet" href="platformstyle.css">
-  <link rel="stylesheet" href="../../custom.css">
-  <link rel="stylesheet" href="../../darktheme.css">
+  <link rel="stylesheet" href="../../styles/custom.css">
+  <link rel="stylesheet" href="../../styles/darktheme.css">
+  <link rel="stylesheet" href="../../styles/hamburger.css">
 </head>
 <body>
+  
   <section class="section2">
     <h2 id="ex">Using the exchange </h2>
- <!--  Контейнер с вкладками   -->
  <ul class="tab-header">
-  <li class="tab-header__item js-tab-trigger active" data-tab="1">Exchange</li>
-  <li class="tab-header__item js-tab-trigger" data-tab="2">Mining platform</li>
-  <li class="tab-header__item js-tab-trigger" data-tab="3">About lottery</li>
-  <li class="tab-header__item js-tab-trigger" data-tab="4">Price</li>
-  <li class="tab-header__item js-tab-trigger" data-tab="5">Leave a review</li>
-  <li class="tab-header__item js-tab-trigger" data-tab="6">Earn</li>
+  
 </ul>
-
-
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-
   </section>
 <header class="header2" id="myHeader">
   <a href="../../index.html" class="orange link" >Go back l</a>
     <img class="logo" src="https://assets.artonline.site/arteon.svg" alt="">
     <h1>Artonline guide</h1> 
     <a href="#ex" class="orange link" >l Go up</a>
-    
     <nav>
-      
       <a href=https://artonline.site>oficial site</a>
       <a href=https://exchange.artonline.site/#!/market>exchange</a>
       <a href=https://discord.gg/artonline>discord</a>
       <a href=https://app.artonline.site>mining platform</a>
       <button class="dt" onclick="toggleTheme('dark');">Dark theme</button>
       <button class="lt hidden" onclick="toggleTheme('light');">Light theme</button>
-
      </article>
-      
-      
     </nav>
   </header>
+  <div class="sticky2">
+    <a href="#menu" id="toggle"><span></span></a>
+    <div id="menu">
+      <ul>
+        <li class="tab-header__item js-tab-trigger active" data-tab="1">Exchange</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="2">Mining platform</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="3">About lottery</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="4">Price</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="5">Leave a review</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="6">Earn</li>
+      </ul>
+    </div>
+  </div>
   
   <div class="tabs">
     <!--  Контейнер с блоками, которые содержат контент вкладок   -->
@@ -66,7 +65,7 @@
           <br>
           Go to<a href="https://app.artonline.site" class="link">mining platform</a>and go to wallet. Select a pool of mining Card
           you want to list on exchange. Select the mining card you want to list. Press on the trianglenext to your mining card id.
-          Enter 0x535e67270f4feb15bffbfe86fee308b81799a7a5 in "currency to recieve" field if you would like to recieve
+          Enter <h6>0x535e67270f4feb15bffbfe86fee308b81799a7a5</h6>in "currency to recieve" field if you would like to recieve
           artonline. Enter 0x0 if you would like to recieve BNB. Enter the price of your miner (it can be any price) in "price" field.
           Press "list" button and approve the transaction. Ypur miner will get listed on exchange within 10 minutes.
           <br> <br>
@@ -191,6 +190,7 @@
   
   </footer>
   <script src="slider.js"></script>
-  <script src="../../java.js"></script>
+  <script src="../../java/java.js"></script>
+  <script src="../../java/hamburger.js"></script>
 </body>
 </html>
