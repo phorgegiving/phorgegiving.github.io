@@ -11,7 +11,6 @@ const toggleTheme = (theme) => {
     htmlEl.dataset.theme = theme;
     localStorage.setItem('theme', theme);
 }
-//БЛЯТЬ КАК ЭТО СДЕЛАТЬ
 
 window.onscroll = function() {myFunction()};
 

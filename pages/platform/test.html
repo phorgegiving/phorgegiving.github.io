@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>beta guide</title>
-  <link rel="stylesheet" href="platformstyle.css">
   <link rel="stylesheet" href="../../styles/custom.css">
   <link rel="stylesheet" href="../../styles/darktheme.css">
   <link rel="stylesheet" href="../../styles/hamburger.css">
+  <link rel="icon" href="../../img/icon.png" type="image/x-icon">
 </head>
 <body>
   
@@ -43,7 +43,7 @@
         <li class="tab-header__item js-tab-trigger" data-tab="2">Mining platform</li>
         <li class="tab-header__item js-tab-trigger" data-tab="3">About lottery</li>
         <li class="tab-header__item js-tab-trigger" data-tab="4">Price</li>
-        <li class="tab-header__item js-tab-trigger" data-tab="5">Leave a review</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="5">Leave a suggestion</li>
         <li class="tab-header__item js-tab-trigger" data-tab="6">Earn</li>
       </ul>
     </div>
@@ -71,11 +71,11 @@
           <br> <br>
           Video tutorial.
           <br>
-          <iframe width="35%" height="20%" src="https://www.youtube.com/embed/ZCbVeOSzLPY"
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZCbVeOSzLPY"
            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           
           </article>
+          <article></article>
        </li>
        
  <!--  Контейнер 2   -->
@@ -102,7 +102,15 @@
             Roi means return on investment. So if you bought a miner for 7000 and its ROI is 1 year it means 
             you mine 7000 back in 3 years. Heres miners ROI. At current artonline price Genesis miner has the fastest ROI.
             
-            <img class="workspace-img" src="../../img/ROI.png" alt="">
+            <table><tr><th>Miner</th><th>Price</th><th>yearly mined</th><th>ROI</th></tr>
+              <tr><td>ARTX1000</td><td>9600 ART</td><td>9600 ART</td><td>1 year</td></tr>
+              <tr><td>ARTX2000</td><td>50500 ART</td><td>37661 ART</td><td>1.3 years</td></tr>
+              <tr><td>Genesis</td><td>153000 ART</td><td>229572 ART</td><td>0.67 year</td></tr>
+              <tr><td>Module</td><td>2300 ART</td><td>2300 ART</td><td>1 year</td></tr>
+              <tr><td>Xtreme</td><td>110000 ART</td><td>145556 ART</td><td>0.76 year</td></tr>
+              <tr><td>Gold</td><td>2.5 BNB</td><td>2560 ART</td><td>null years</td></tr>
+            </table>
+
             <h4 class="warning">(Data is measured according to full pool.)</h4>
           </article><article>
         
@@ -145,19 +153,37 @@
        </li>
        <li class="tab-content__item js-tab-content" data-tab="3">
           <article>
-            SOON
+            Lottery is currently a beta feature.
           </article>
        </li>
 
        <li class="tab-content__item js-tab-content" data-tab="4">
         <article>
-          SOON
+          <script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js"> </script>
+<coingecko-coin-ticker-widget coin-id="artonline" currency="usd" local="en" background-color="#000">
+</coingecko-coin-ticker-widget> </coingecko-coin-ticker-widget>
+
         </article>
      </li>
 
      <li class="tab-content__item js-tab-content" data-tab="5">
       <article>
-        SOON
+        <form name="comment" action="../../php/comment.php" method="post">
+          <p>
+            <label>Имя:</label>
+            <input type="text" name="name" />
+          </p>
+          <p>
+            <label>Комментарий:</label>
+            <br />
+            <textarea name="text_comment" cols="30" rows="50"></textarea>
+          </p>
+          <p>
+            <input type="hidden" name="page_id" value="150" />
+            <input type="submit" value="Отправить" />
+          </p>
+        </form>
+        <?php include '../../php/comment.php' ?>
       </article>
    </li>
 
@@ -184,13 +210,14 @@
         <a href="https:/artonline.site">About</a>
         <a href="#">Contact</a>
       </p>
-  
-      <p>Phorgegiving &copy; 2022. All rights reserved</p>
+      <p class="thanks">special thanks to <br> BHero#9746 <br> Iondependent#5156</p>
+      <p>Phorgegiving &copy; 2022. All rights reserved</p><p class="up">beta 1.2.2 this website may have some known bugs.</p>
     </div>
   
   </footer>
   <script src="slider.js"></script>
   <script src="../../java/java.js"></script>
   <script src="../../java/hamburger.js"></script>
+
 </body>
 </html>

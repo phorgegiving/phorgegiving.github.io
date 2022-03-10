@@ -119,24 +119,6 @@
   article p + p {
     margin-top: .7em;
   }
-  @media (min-width: 500px) {
-    header {
-      text-align: left;
-    }
-    nav {
-      float: right;
-    }
-    article {
-      margin: 3.5em auto 0;
-      padding: 2em;
-    }
-    .logo{width: 5%;}
-  }
-  @media (min-width: 800px) {
-    article {
-      margin: 3.5em auto;
-    }
-  }
 
 .header {
   padding: 10px 16px;
@@ -263,7 +245,7 @@ padding-top: 102px;}
  line-height: 1;
  padding-top: 10px;
  display: block;
- padding-left: 30vh;
+
 }
 
 .ht h3{
@@ -282,20 +264,6 @@ padding-top: 102px;}
 
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
 
-
-
-@media (max-width: 600px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-right {
-    text-align: center;
-  }
-  .footer-distributed .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-  }
-  .footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-  }
-}
 
 .footer-distributed {
   background-color: rgb(255, 255, 255);
@@ -378,3 +346,18 @@ padding-top: 102px;}
 .up{
     margin-bottom: 100vh;
   }
+
+  table {
+    border: 1px solid grey;
+ }
+ /* границы ячеек первого ряда таблицы */
+ th {
+    border: 1px solid grey;
+ }
+ /* границы ячеек тела таблицы */
+ td {
+    border: 1px solid grey;
+ }
+ table {
+  width: 100%;
+}
