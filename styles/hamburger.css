@@ -29,6 +29,7 @@
     backface-visibility: hidden;
     border-radius: 2px;
   }
+
   
   /* on activation */
   #toggle.on span {
