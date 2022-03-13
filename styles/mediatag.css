@@ -25,25 +25,41 @@ section span {
   .gifcenter{
       width: 15%;
   }
-}
 
-@media (max-width: 800px) {
  .ht span{
      display: inline-block;
      padding-left: none;
      line-height: 0.5;
      text-align: center;
  }
-}
 
-@media (max-width: 800px) {
-.countdown-text {
+
+  .countdown-text {
     display: inline-block;
     padding-top: 5px;
     font-size: 16px;
     margin-right: 15vh;
   }
+
+  #pc {
+    visibility: hidden;
+    display: none;
+    }
 }
+
+@media (min-width: 800px) {
+  #mobile {
+  visibility: hidden;
+  display: none;
+  }
+
+  .tab-header__item .js-tab-trigger{
+    display: inline-block;
+
+  }
+}
+
+
 
 @media (min-width: 500px) {
     header {

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../../styles/custom.css">
   <link rel="stylesheet" href="../../styles/darktheme.css">
   <link rel="stylesheet" href="../../styles/hamburger.css">
+  <link rel="stylesheet" href="../../styles/mediatag.css">
   <link rel="icon" href="../../img/icon.png" type="image/x-icon">
 </head>
 <body>
@@ -21,21 +22,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </section>
 <header class="header2" id="myHeader">
-  <a href="../../index.html" class="orange link" >Go back l</a>
     <img class="logo" src="https://assets.artonline.site/arteon.svg" alt="">
     <h1>Artonline guide</h1> 
-    <a href="#ex" class="orange link" >l Go up</a>
     <nav>
-      <a href=https://artonline.site>oficial site</a>
-      <a href=https://exchange.artonline.site/#!/market>exchange</a>
-      <a href=https://discord.gg/artonline>discord</a>
-      <a href=https://app.artonline.site>mining platform</a>
       <button class="dt" onclick="toggleTheme('dark');">Dark theme</button>
       <button class="lt hidden" onclick="toggleTheme('light');">Light theme</button>
+      <div id="pc">
+        <li class="tab-header__item js-tab-trigger active" data-tab="1">Exchange</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="2">Mining platform</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="3">About lottery</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="4">Price</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="5">Leave a suggestion</li>
+        <li class="tab-header__item js-tab-trigger" data-tab="6">Earn</li>
+      </div>
      </article>
     </nav>
   </header>
-  <div class="sticky2">
+  <div id="mobile">
     <a href="#menu" id="toggle"><span></span></a>
     <div id="menu">
       <ul>
