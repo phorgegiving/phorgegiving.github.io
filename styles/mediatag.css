@@ -53,7 +53,7 @@ section span {
   display: none;
   }
 
-  .tab-header__item .js-tab-trigger{
+  li{
     display: inline-block;
 
   }
