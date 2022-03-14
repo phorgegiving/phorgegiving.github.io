@@ -138,6 +138,10 @@
   margin-top: -16vh;
 }
 
-nav{
-  display: inline-block;
+.sticky3 {
+  position: fixed;
+}
+
+.pc{
+  display: block;
 }

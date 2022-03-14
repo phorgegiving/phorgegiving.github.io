@@ -53,6 +53,11 @@ section span {
   display: none;
   }
 
+  #mobile2 {
+    visibility: hidden;
+    display: none;
+    }
+
   li{
     display: inline-block;
 
