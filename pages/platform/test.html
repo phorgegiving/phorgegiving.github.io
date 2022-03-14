@@ -22,12 +22,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </section>
 <header class="header2" id="myHeader">
-    <img class="logo" src="https://assets.artonline.site/arteon.svg" alt="">
-    <h1>Artonline guide</h1> 
-    <nav>
-      <button class="dt" onclick="toggleTheme('dark');">Dark theme</button>
-      <button class="lt hidden" onclick="toggleTheme('light');">Light theme</button>
+  <nav>
+   
+     
       <div id="pc">
+        <img class="logo" src="https://assets.artonline.site/arteon.svg" alt="">
+        <h1>Artonline guide</h1> 
+          <button class="dt" onclick="toggleTheme('dark');">Dark theme</button>
+          <button class="lt hidden" onclick="toggleTheme('light');">Light theme</button>
         <li class="tab-header__item js-tab-trigger active" data-tab="1">Exchange</li>
         <li class="tab-header__item js-tab-trigger" data-tab="2">Mining platform</li>
         <li class="tab-header__item js-tab-trigger" data-tab="3">About lottery</li>
@@ -35,22 +37,27 @@
         <li class="tab-header__item js-tab-trigger" data-tab="5">Leave a suggestion</li>
         <li class="tab-header__item js-tab-trigger" data-tab="6">Earn</li>
       </div>
+      <div id="mobile">
+        <img class="logo" src="https://assets.artonline.site/arteon.svg" alt="">
+            <h1>Artonline guide</h1> 
+          </div>
      </article>
     </nav>
-  </header>
-  <div id="mobile">
-    <a href="#menu" id="toggle"><span></span></a>
-    <div id="menu">
-      <ul>
-        <li class="tab-header__item js-tab-trigger active" data-tab="1">Exchange</li>
-        <li class="tab-header__item js-tab-trigger" data-tab="2">Mining platform</li>
-        <li class="tab-header__item js-tab-trigger" data-tab="3">About lottery</li>
-        <li class="tab-header__item js-tab-trigger" data-tab="4">Price</li>
-        <li class="tab-header__item js-tab-trigger" data-tab="5">Leave a suggestion</li>
-        <li class="tab-header__item js-tab-trigger" data-tab="6">Earn</li>
-      </ul>
+  </header><div id="mobile2">
+  <a href="#menu" id="toggle" class="sticky2"><span></span></a>
+        <div id="menu" class="sticky2">
+    <ul>
+      <li class="tab-header__item js-tab-trigger active" data-tab="1">Exchange</li>
+      <li class="tab-header__item js-tab-trigger" data-tab="2">Mining platform</li>
+      <li class="tab-header__item js-tab-trigger" data-tab="3">About lottery</li>
+      <li class="tab-header__item js-tab-trigger" data-tab="4">Price</li>
+      <li class="tab-header__item js-tab-trigger" data-tab="5">Leave a suggestion</li>
+      <li class="tab-header__item js-tab-trigger" data-tab="6">Earn</li>
+    </ul>
+        </div>
     </div>
-  </div>
+  
+  
   
   <div class="tabs">
     <!--  Контейнер с блоками, которые содержат контент вкладок   -->

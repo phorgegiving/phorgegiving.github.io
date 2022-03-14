@@ -110,7 +110,7 @@ html[data-theme='dark'] .orange{
   
   html[data-theme='dark'] .tab-header__item.active {
     color: coral;
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0);
     transition: all 0.5s;
    
   }
