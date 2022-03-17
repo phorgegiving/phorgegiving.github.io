@@ -110,6 +110,7 @@
     background: white;
     box-shadow: rgba(0,0,0,.05) 0 3px 15px;
     border-radius: 20px;
+    transition: background-color 500ms;
   }
   article p {
     margin: 0;
@@ -124,7 +125,7 @@
   padding: 10px 16px;
       background: white;
       box-shadow: rgba(0,0,0,.05) 0 3px 15px;
-      transition: background 500ms;
+      transition: background-color 500ms;
 
 }
 

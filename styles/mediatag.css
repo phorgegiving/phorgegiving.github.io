@@ -41,6 +41,11 @@ section span {
     margin-right: 15vh;
   }
 
+  #mobile {
+    visibility: visible;
+    display: inline-block;
+    }
+  
   #pc {
     visibility: hidden;
     display: none;
@@ -52,11 +57,6 @@ section span {
   visibility: hidden;
   display: none;
   }
-
-  #mobile2 {
-    visibility: hidden;
-    display: none;
-    }
 
   li{
     display: inline-block;

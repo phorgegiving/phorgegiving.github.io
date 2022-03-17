@@ -135,11 +135,12 @@
 
 .sticky2 {
   position: fixed;
-  margin-top: -16vh;
+  margin-top: -18vh;
 }
 
-.sticky3 {
+#menu {
   position: fixed;
+  margin-top: -14vh;
 }
 
 .pc{
