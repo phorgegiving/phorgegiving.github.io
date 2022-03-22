@@ -197,7 +197,7 @@ padding-top: 102px;}
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    font-size: 0.8em;
+    font-size: 1em;
     /* Тут можно поэкспериментировать */
    
     border-radius: 10px;
@@ -361,4 +361,8 @@ padding-top: 102px;}
  }
  table {
   width: 100%;
+}
+
+#pc {
+  margin-left: 20vh;
 }
