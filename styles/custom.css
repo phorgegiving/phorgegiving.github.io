@@ -70,6 +70,7 @@
     left: 0;
     transition: opacity .2s ease-in-out;
     text-align: center;
+    box-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
     
   }
   .header2 {
