@@ -368,3 +368,14 @@ padding-top: 102px;}
   margin-left: 20vh;
 }
 
+input{
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.445);
+}
