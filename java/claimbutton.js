@@ -8,7 +8,7 @@
         function btnenabl() {
         document.getElementById('rewa').removeAttribute("disabled");}
         
-        document.getElementById('rewa').onclick = function() {
-            document.getElementById('rewa').setAttribute('disabled', 'disabled');
+        document.querySelector("button").onclick = function() {
+            document.querySelector("button").setAttribute('disabled', 'disabled');
           }
         
