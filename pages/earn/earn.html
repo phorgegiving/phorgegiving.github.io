@@ -12,10 +12,9 @@
   <link rel="stylesheet" href="../../styles/mediatag.css">
   <link rel="icon" href="../../img/icon.png" type="image/x-icon">
 </head>
-<script src='https://www.hCaptcha.com/1/api.js' async defer></script>
 <body>
   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <header class="header2" id="myHeader">
   <nav>
         <img class="logo" src="https://assets.artonline.site/arteon.svg" alt="">
@@ -27,8 +26,9 @@
         <br>
         <article> 
             <div id="number">You havent earned anything... yet</div>
-            <div class="h-captcha" data-sitekey="9238cffa-8eaa-44b6-a8c3-73eb5d07c8d1" data-callback="enableBtn"></div>
-            <input type="button" value="Claim reward" id="claimart" disabled="disabled">
+            <form action="?" method="POST">
+                <div class="g-recaptcha" data-sitekey="6LebQlQfAAAAAMGPz8xkhhOFfVFN5KdCfpA3_03k" data-callback="enableBtn"></div>
+            <input type="button" value="Submit" id="button1" disabled="disabled">
 This site is alpha. No earnings will be withdrawed.
           </article>
      </li>
@@ -72,7 +72,7 @@ This site is alpha. No earnings will be withdrawed.
         number = number + 0.05;
         document.getElementById("number").innerHTML = 'Your balance is ' + Math.floor(number * 100) / 100 + ' ART';
         function enableBtn(){
-   document.getElementById("claimart").disabled = false;
+   document.getElementById("button1").disabled = false;
  }
     }
     </script>
