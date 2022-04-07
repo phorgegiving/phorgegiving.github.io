@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="../../styles/hamburger.css">
   <link rel="stylesheet" href="../../styles/mediatag.css">
   <link rel="icon" href="../../img/icon.png" type="image/x-icon">
+  <script type="text/javascript">
+    var onloadCallback = function() {
+      grecaptcha.render('html_element', {
+        'sitekey' : '6LebQlQfAAAAAMGPz8xkhhOFfVFN5KdCfpA3_03k'
+      });
+    };
+  </script>
 </head>
 <body>
   
@@ -27,8 +34,13 @@
         <article> 
             <div id="number">You havent earned anything... yet</div>
             <form action="?" method="POST">
-                <div class="g-recaptcha" data-sitekey="6LebQlQfAAAAAMGPz8xkhhOFfVFN5KdCfpA3_03k" data-callback="enableBtn"></div>
-            <input type="button" value="Submit" id="button1" disabled="disabled">
+                <div id="html_element"></div>
+                <br>
+                <input type="submit" value="Submit">
+              </form>
+              <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                  async defer>
+              </script>
 This site is alpha. No earnings will be withdrawed.
           </article>
      </li>
