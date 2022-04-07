@@ -27,11 +27,11 @@
         <br>
         <article> 
             <div id="number">You havent earned anything... yet</div>
-            <form action="?" method="POST">
-                <div class="g-recaptcha" data-sitekey="6LebQlQfAAAAAMGPz8xkhhOFfVFN5KdCfpA3_03k" data-callback="enableBtn"></div>
-                <br/>
-                <input type="button" value="Submit" id="button1" disabled="disabled">
-              </form>
+            <div class="g-recaptcha" data-sitekey="6LebQlQfAAAAAMGPz8xkhhOFfVFN5KdCfpA3_03k" data-callback="btnenabl"></div>
+            <div class="input">
+                <button id="rewa" disabled>Зарегистрироваться</button><br>
+                <a href="/login?reset" class="restorelink"><p class="reclear">Забыли пароль?</p></a>
+            </div>
 This site is alpha. No earnings will be withdrawed.
           </article>
      </li>
@@ -74,10 +74,11 @@ This site is alpha. No earnings will be withdrawed.
     document.querySelector("button").onclick = function() {
         number = number + 0.05;
         document.getElementById("number").innerHTML = 'Your balance is ' + Math.floor(number * 100) / 100 + ' ART';
-        var enableBtn = function(){
-   document.getElementById("button1").disabled = false;
- }
     }
     </script>
+    <script>
+        function btnenabl() {
+        document.getElementById('rewa').removeAttribute("disabled");}
+        </script>
 </body>
 </html>
